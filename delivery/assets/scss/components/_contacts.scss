@@ -1,0 +1,58 @@
+.contacts {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 45px 0;
+    }
+    &__wrapper {
+        width: 100%;
+        padding: 40px;
+        height: 466px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-image: url('../img/contacts_bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        row-gap: 54px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include md {
+            padding: 15px;
+            min-height: 466px;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        @include md {
+            font-size: 24px;
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 16px;
+        @include md {
+            flex-direction: column;
+            width: 100%;
+        }
+        &-item {
+            display: inline-flex;
+            @include md {
+                width: 100%;
+            }
+        }
+        &-button {
+            @include md {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

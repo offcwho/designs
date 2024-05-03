@@ -1,0 +1,78 @@
+.works {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 45px 0;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @include lg {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+    }
+    &__left {
+        width: 100%;
+    }
+    &__text {
+        margin: 20px 0 60px 0;
+    }
+    &__right {
+        width: 100%;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        &-item {
+            display: flex;
+            align-items: start;
+            gap: 30px;
+        }
+        &-count {
+            min-width: 40px;
+            height: 40px;
+            border: 1px solid var(--color-outline);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-name {
+            margin: 0;
+            padding: 0;
+            color: var(--color-accent);
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &-text {
+            margin: 10px 0 0 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+    }
+    &__buttons {
+        margin: 30px 0 0 0;
+        padding: 0;
+        display: flex;
+        gap: 16px;
+        @include sm {
+            width: 100%;
+            flex-direction: column;
+        }
+        &-item {
+            display: inline-flex;
+            @include sm {
+                width: 100%;
+            }
+        }
+        &-link {
+            @include sm {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

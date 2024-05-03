@@ -1,0 +1,19 @@
+.build {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 45px 0;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        padding: 16px 0 40px 0;
+        text-align: center;
+    }
+    &__image {
+        width: 100%;
+        height: 305px;
+        object-fit: cover;
+    }
+}

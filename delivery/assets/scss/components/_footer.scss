@@ -1,0 +1,84 @@
+.footer {
+    width: 100%;
+    padding-top: 75px;
+    @include md {
+        padding-top: 45px;
+    }
+    &__top {
+        width: 100%;
+        margin-bottom: 150px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        @include md {
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+    }
+    &__company {
+        width: 100%;
+        &-info {
+            margin: 0;
+            padding: 20px 0 0 0;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        &-item {
+            display: inline-flex;
+            &--address {
+                margin-bottom: 10px;
+            }
+            &--social {
+                margin-top: 20px;
+            }
+        }
+        &-address {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__right {
+        width: 100%;
+        display: grid;
+        column-gap: 100px;
+        grid-template-columns: repeat(3,1fr);
+        @include lg {
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+        }
+        @include md {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+    &__nav {
+        width: 100%;
+        &-name {
+            margin: 0;
+            padding: 0;
+            color: var(--color-accent);
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &-list {
+            margin: 0;
+            padding: 22px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+        &-item {
+            display: inline-flex;
+        }
+    }
+    &__bottom {
+        width: 100%;
+        padding: 30px 0;
+        border-top: 1px solid var(--color-outline);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

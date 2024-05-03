@@ -1,0 +1,43 @@
+.benefits {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 35px 0;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        @include lg {
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        @include md {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__icon {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+    }
+    &__name {
+        margin: 0;
+        padding: 20px 0 10px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-accent);
+    }
+    &__text {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}

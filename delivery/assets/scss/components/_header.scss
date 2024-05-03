@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    padding: 30px 0;
+    @include xl {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: var(--color-white);
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-btn {
+        width: 45px;
+        height: 45px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: 1px solid var(--color-outline);
+        border-radius: 4px;
+        font-size: 20px;
+        color: var(--color-accent);
+        @include xl {
+            display: flex;
+        }
+    }
+}

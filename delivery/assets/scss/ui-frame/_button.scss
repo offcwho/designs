@@ -1,0 +1,29 @@
+.button{
+    padding: 13px 25px;
+    border-radius: 4px;
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+    &--primary {
+        color: var(--color-white);
+        border: 1px solid var(--color-accent);
+        background-color: var(--color-accent);
+        &:hover {
+            border-color: #2c3942;
+            background-color: #2c3942;
+        }
+    }
+    &--outline {
+        color: var(--color-accent);
+        border: 1px solid var(--color-outline);
+        background-color: transparent;
+        &:hover {
+            background-color: var(--color-outline);
+        }
+    }
+    &--light {
+        color: var(--color-accent);
+        border: 1px solid var(--color-white);
+        background-color: var(--color-white);
+    }
+}

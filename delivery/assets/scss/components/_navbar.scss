@@ -1,0 +1,39 @@
+.navbar {
+   display: flex;
+   gap: 20px;
+   align-items: center; 
+   &--active {
+    display: flex !important; 
+   }
+   @include xl {
+    position: absolute;
+    top: 100%;
+    border-top: 1px solid var(--color-outline);
+    padding: 10px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    display: none;
+    flex-direction: column;
+   }
+   &__menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        @include xl {
+            flex-direction: column;
+        }
+        &-item {
+            display: inline-flex;
+        }
+        &-link {
+            padding: 2px;
+            &:hover {
+                color: var(--color-blue);
+            }
+        }
+   }
+}

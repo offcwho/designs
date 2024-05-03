@@ -1,0 +1,109 @@
+.security {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 45px 0;
+    }
+    &__headline {
+        max-width: 860px;
+        margin: 0 auto 50px auto;
+        display: flex;
+        flex-direction: column;
+        &-title {
+            position: relative;
+            display: inline-flex;
+            margin: 0 auto 15px auto;
+            text-align: center;
+            &::after {
+                content: '';
+                width: 42px;
+                height: 42px;
+                position: absolute;
+                top: -25px;
+                right: -35px;
+                background: url('../img/security/icon-title.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        &-text {
+            text-align: center;
+        }
+    }
+    &__content {
+        margin: 0 0 60px 0;
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        @include lg {
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        @include md {
+            grid-template-columns: 1fr;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-name {
+            padding: 0;
+            margin: 20px 0 10px 0;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--color-accent);
+            text-align: center;
+        }
+        &-text {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        padding: 45px 40px;
+        border-radius: 5px;
+        background-color: var(--color-light);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include md {
+            flex-direction: column;
+        }
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            @include sm {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        &-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--color-accent);
+            @include sm {
+                text-align: center;
+            }
+        }
+        &-link {
+            @include sm {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

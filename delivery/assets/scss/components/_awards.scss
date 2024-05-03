@@ -1,0 +1,128 @@
+.awards {
+    width: 100%;
+    padding: 75px 0;
+    @include md {
+        padding: 45px 0;
+    }
+
+    &__headline {
+        max-width: 680px;
+        margin: 0 auto 55px auto;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 17px;
+    }
+    &__grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @include lg {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0 70px 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @include lg {
+            padding: 0;
+        }
+        &-item {
+            display: flex;
+            align-items: start;
+            gap: 30px;
+        }
+        &-img {
+            min-width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        &-name {
+            margin: 0;
+            padding: 0;
+            color: var(--color-accent);
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &-text {
+            margin: 10px 0 0 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+    }
+
+    &__feedbacks {
+        width: 100%;
+        padding: 60px 92px 56px 42px;
+        border-radius: 5px;
+        background-color: var(--color-light);
+        display: flex;
+        flex-direction: column;
+        @include lg {
+            padding: 42px;
+        }
+        @include md {
+            padding: 15px;
+        }
+        &-text {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            line-height: 1.5;
+            color: var(--color-accent);
+            &::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: -20px;
+                left: -40px;
+                width: 105px;
+                height: 80px;
+                background-image: url(../img/awards/before-icon.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                @include md {
+                    width: 50px;
+                    height: 50px;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            @include md {
+                font-size: 22px;
+            }
+        }
+        &-author {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            @include lg {
+                margin-top: 25px;
+            }
+        }
+        &-avatar {
+            min-width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        &-name {
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-style: normal;
+            color: var(--color-accent);
+        }
+        &-position {
+            font-style: normal;
+        }
+    }
+}
