@@ -1,0 +1,32 @@
+.button{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 63px;
+    height: 56px;
+    &__placeholder{
+        border-bottom: 1px solid var(--heading-color);
+    }
+}
+.button--primary{
+    background-color: var(--heading-color);
+    color: var(--color-white);
+    padding: 15px 30px 15px 30px;
+}
+.button--icon{
+    width: 56px;
+}
+.button--border{
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0!important;
+}
+.button--light{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+}

@@ -1,0 +1,27 @@
+.application{
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--heading-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    &__template{
+        width: 100%;
+    }
+}
+.container{
+    position: relative;
+    padding: 0 100px;
+    margin-inline: auto;
+    max-width: var(--container-width);
+    width: 100%;
+    @include xl{
+        padding: 0 25px;
+    }
+}
+.heading{
+    font-size: 64px;
+    font-weight: 800;
+    @include md{
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+.pricing{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 200px 0;
+        @include xl{
+            margin:  0 0 100px 0;
+        }
+    }
+    &__title{
+        text-align: center;
+        margin: 0 0 24px 0;
+    }
+    &__description{
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 100px 0;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        @include xl{
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include md{
+            grid-template-columns: 1fr;
+        }
+    }
+    &__card{
+        max-width: 394px;
+        margin: 0 0 50px 0;
+    }
+}

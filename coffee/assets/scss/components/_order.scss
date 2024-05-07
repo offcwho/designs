@@ -1,0 +1,59 @@
+.order{
+    &__container{
+        padding: 0 100px;
+        display: flex;
+        height: 575px;
+        @include xl{
+            padding: 0 25px;
+            justify-content: center;
+        }
+    }
+    &__left{
+        position: relative;
+        @include xl{
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    &__image{
+        height: 575px;
+        object-fit: cover;
+        width: 100%;
+    
+    }
+    &__eclipse{
+        position: absolute;
+        left: 80px;
+        top: 110px;
+        z-index: -1;
+        width: 100%;
+        @include md{
+            left: 0;
+        }
+    }
+    &__title{
+        font-weight: 800;
+        font-size: 64px; 
+        margin: 0 0 30px 0;
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 24px;
+        margin: 0 0 60px 0;
+        color: var(--text-color);
+        @include xl{
+            background-color: var(--color-white);
+            padding: 20px;
+            border-radius: 16px;
+        }
+    }
+    &__button{
+        width: 190px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

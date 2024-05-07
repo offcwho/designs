@@ -1,0 +1,24 @@
+.navbar{
+    &__menu{
+        display: flex;
+        gap: 40px;
+        padding: 0;
+        margin: 0;
+        @include xl{
+            gap: 20px;
+        }
+        @include md{
+            flex-direction: column;
+        }
+    }
+    &__item{
+        list-style: none;
+        @include md{
+            text-align: center;
+        }
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 15px;
+    }
+}

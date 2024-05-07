@@ -1,0 +1,48 @@
+.header{
+    padding: 24px 0 0 0;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right-items{
+        display: flex;
+        gap: 40px;
+        @include xl{
+            gap: 20px;
+        }
+        @include md{
+            display: none;
+        }
+        &--active{
+            position: absolute;
+            flex-direction: column;
+            display: flex;
+            top: 0;
+            width: 100%;
+            align-items: center;
+            left: 0;
+            background: var(--bg-color);
+            z-index: 1;
+            padding: 0 0 20px 0;
+        }
+    }
+    &__buttons{
+        display: flex;
+        gap: 20px;
+    }
+    &__open-menu{
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-white);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        display: none;
+        z-index: 2;
+        @include md{
+            display: flex;
+        }
+    }
+}

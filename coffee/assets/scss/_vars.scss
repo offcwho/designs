@@ -1,0 +1,19 @@
+// создаем переменные для scss
+$black: #000;
+$white: #fff;
+$bg-color: #EEEFF1;
+$heading-color: #1B1B1D;
+$text-color: #64646A;
+// создаем переменные для css
+:root{
+    --color-white: #{$white};
+    --color-black: #{$black};
+    --bg-color: #{$bg-color};
+    --heading-color: #{$heading-color};
+    --text-color: #{$text-color};
+    --content-width: 1920px;
+    --container-padding: 0px;
+    --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --font-size: 16px;
+    --font-family: "Jost", sans-serif;
+}
