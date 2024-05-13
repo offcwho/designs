@@ -1,0 +1,32 @@
+.faq{
+    padding: 75px 0;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        width: 400px;
+    }
+    &__title{
+        margin: 0 0 20px 0;
+        font-size: 40px;
+        color: var(--color-light);
+    }
+    &__description{
+        font-size: 20px;
+    }
+    &__block{
+        height: 50px;
+        background-color: var(--color-light);
+        margin: 0 0 10px 0;
+        border-radius: 25px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+.bx{
+    font-size: 20px;
+}

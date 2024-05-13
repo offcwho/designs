@@ -1,0 +1,57 @@
+.projects{
+    padding: 75px 0;
+    background-color: var(--color-bg-section);
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin: 0 0 50px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 55px;
+        color: var(--color-light);
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__proj-title{
+        margin: 0 0 20px 0;
+        font-size: 40px;
+        color: var(--color-light);
+    }
+    &__description{
+        font-size: 25px;
+        
+    }
+    &__bx{
+        font-size: 30px!important;
+    }
+    &__image{
+        width: 500px;
+        height: 500px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 50px;
+        background-color: var(--color-light);
+        padding: 15px 25px;
+        border-radius: 25px;
+        border: 2px solid var(--color-light);
+        transition: all 100ms ease-in-out;
+        &:hover{
+            background-color: transparent;
+            color: var(--color-light);
+            transition: all 100ms ease-in-out;
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

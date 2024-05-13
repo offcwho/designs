@@ -1,0 +1,13 @@
+// подключает компоненты отдельных блоков сайта
+// в качестве тестового подключения, подключается блок - header
+@import "./components/header";
+@import "./components/nav";
+@import "./components/welcome";
+@import "./components/about";
+@import "./components/services";
+@import "./components/card";
+@import "./components/projects";
+@import "./components/faq";
+@import "./components/news";
+@import "./components/footer";
+@import "./components/modal"

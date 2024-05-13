@@ -1,0 +1,23 @@
+// создаем переменные для scss
+$black: #000;
+$white: #fff;
+// создаем переменные для css
+:root{
+    --color-white: #{$white};
+    --color-black: #{$black};
+    --color-accent: #9291c6;
+    --color-gray: #72787D;
+    --color-light: #F6F8F9;
+    --color-blue: #036FC7;
+    --color-outline: #DADEDF;
+    --color-secondary: #FFDD76;
+    --color-body: #21212d;
+    --color-bg: #474660;
+    --color-bg-section: #343447;
+    --color-bg-card: #3e3d54;
+    --content-width: 1200px;
+    --container-padding: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --font-size: 16px;
+    --font-family: 'SF UI', sans-serif;
+}

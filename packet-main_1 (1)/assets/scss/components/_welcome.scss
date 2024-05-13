@@ -1,0 +1,21 @@
+.welcome{
+    height: 800px;
+    &__container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__title{
+        margin: 0;
+        font-size: 55px;
+        color: var(--color-light);
+    }
+    &__subtitle{
+        font-size: 45px;
+        color: var(--color-light);
+        text-align: center;
+    }
+}

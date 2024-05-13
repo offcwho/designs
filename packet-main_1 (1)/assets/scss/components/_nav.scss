@@ -1,0 +1,16 @@
+.nav{
+    width: 100%;
+    &__list{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        background-color: var(--color-bg);
+        color: var(--color-light);
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 25px;
+    }
+    &__item{
+        list-style: none;
+    }
+}
