@@ -1,0 +1,130 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --content-width: 1200px;
+  --container-padding: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+  --font-size: 16px;
+  --font-family: "SF UI", sans-serif;
+}
+
+@font-face {
+  font-family: "SF UI";
+  src: url(/assets/fonts/SFUIDisplay-Light.woff2) format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF UI";
+  src: url(/assets/fonts/SFUIDisplay-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF UI";
+  src: url(/assets/fonts/SFUIDisplay-Medium.woff2) format(woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF UI";
+  src: url(/assets/fonts/SFUIDisplay-Semibold.woff2) format(woff2);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF UI";
+  src: url(/assets/fonts/SFUIDisplay-Bold.woff2) format(woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+.application {
+  height: 100%;
+  width: 100%;
+  background-color: #291e2c;
+  color: var(--color-black);
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+.application__template {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .container {
+    background-color: red;
+  }
+}
+
+.accordion {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.accordion__container {
+  height: 100%;
+  display: flex;
+}
+.accordion__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion__list {
+  margin: 0;
+  padding: 15px 20px;
+  width: 600px;
+  background-color: #5d4464;
+  border-radius: 25px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.accordion__item {
+  padding: 0;
+  background-color: #c791d6;
+  border: 1px solid #c791d6;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.accordion__item:nth-child(2) {
+  background-color: #ba88c8;
+  border: 1px solid #ba88c8;
+}
+.accordion__item:nth-child(3) {
+  background-color: #ac7eb9;
+  border: 1px solid #ac7eb9;
+}
+.accordion__item:nth-child(4) {
+  background-color: #926a9d;
+  border: 1px solid #926a9d;
+}
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.accordion__header .bx {
+  font-size: 25px;
+}
+.accordion li {
+  list-style: none;
+}
+.accordion__title {
+  margin: 0;
+}
+.accordion__description {
+  line-height: 27px;
+  padding: 0 20px;
+  margin: 0;
+  height: 0;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}/*# sourceMappingURL=main-style.min.css.map */
