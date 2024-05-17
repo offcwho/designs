@@ -1,0 +1,41 @@
+// header style
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        color: var(--color-white);
+        font-weight: 700;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: var(--color-white);
+        border-radius: 20px;
+        &:hover, &.active{
+            background-color: var(--color-white);
+            color: #2b1055;
+        }
+    }
+}
