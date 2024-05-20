@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <script defer src="/assets/javascript/application.js"></script>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <div class="container header__container">
+                <nav class="header__navigation">
+                    <img src="/assets/img/logo.png" alt="Logo" class="header__logo">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Features</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Contact</a>
+                        </li>
+                    </ul>
+                    <img src="/assets/img/user.png" alt="Photo User" class="header__user-image" id="btn" onclick="open_menu()">
+                    <div class="header__sub-menu-wrap" id="sub_menu">
+                        <div class="header__sub-menu">
+                            <div class="header__user-info">
+                                <img src="assets/img/user.png" alt="" class="header__user-info-image">
+                                <h3 class="header__user-name">James Aldrino</h3>
+                            </div>
+                            <hr class="header__divider">
+                            <menu class="header__sub-menu-items">
+                                <li class="header__sub-menu-item">
+                                    <a href="#!" class="header__sub-menu-link">
+                                        <img src="/assets/img/profile.png" alt="" class="header__sub-menu-image">
+                                        <p class="header__sub-menu-text">Edit Profile</p>
+                                        <span class="header__sub-menu-span">></span>
+                                    </a>
+                                </li>
+                                <li class="header__sub-menu-item">
+                                    <a href="#!" class="header__sub-menu-link">
+                                       <img src="/assets/img/setting.png" alt="" class="header__sub-menu-image">
+                                       <p class="header__sub-menu-text">Settings & Privacy</p>
+                                       <span class="header__sub-menu-span">></span>
+                                    </a>
+                                </li>
+                                <li class="header__sub-menu-item">
+                                    <a href="#!" class="header__sub-menu-link">
+                                       <img src="/assets/img/help.png" alt="" class="header__sub-menu-image">
+                                       <p class="header__sub-menu-text">Help & Support</p>
+                                       <span class="header__sub-menu-span">></span>
+                                    </a>
+                                </li>
+                                <li class="header__sub-menu-item">
+                                    <a href="#!" class="header__sub-menu-link">
+                                       <img src="/assets/img/logout.png" alt="" class="header__sub-menu-image">
+                                       <p class="header__sub-menu-text">Logout</p>
+                                       <span class="header__sub-menu-span">></span>      
+                                    </a>
+                                </li>
+                            </menu>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+                <!-- контент страницы сайта -->                
+            </div>
+        </main>
+        <footer class="application__footer footer">
+            <!-- контент подвала сайта -->
+        </footer>
+    </div>
+</body>
+</html>
