@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <script defer src="/assets/javascript/application.js"></script>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <div class="container header__container">
+                <figure class="header__logo">
+                    <img src="/assets/img/logo.png" alt="" class="header__image">
+                </figure>
+                <nav class="header__navigation">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    </svg>
+                </nav>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+                <!-- контент страницы сайта -->             
+                <section class="main__section slider">
+                    <ul class="slider__list">
+                        <li class="slider__item slider__item--active">
+                            <div class="slider__image" style="--url: url('/assets/img/1.jpg')"></div>
+                            <div class="slider__content">
+                                <h2 class="slider__title">SLIDER IMAGE MAGIC</h2>
+                                <p class="slider__text">
+                                    Nulla magna irure incididunt irure nisi laboris adipisicing adipisicing ad aliquip exercitation sit duis.
+                                </p>
+                                <p class="slider__text">
+                                    Ex irure minim eiusmod tempor cillum consectetur ullamco.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="slider__image" style="--url: url('/assets/img/2.jpg')"></div>
+                            <div class="slider__content">
+                                <h2 class="slider__title">SLIDER IMAGE MAGIC</h2>
+                                <p class="slider__text">
+                                    Nulla magna irure incididunt irure nisi laboris adipisicing adipisicing ad aliquip exercitation sit duis.
+                                </p>
+                                <p class="slider__text">
+                                    Ex irure minim eiusmod tempor cillum consectetur ullamco.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="slider__image" style="--url: url('/assets/img/3.jpg')"></div>
+                            <div class="slider__content">
+                                <h2 class="slider__title">SLIDER IMAGE MAGIC</h2>
+                                <p class="slider__text">
+                                    Nulla magna irure incididunt irure nisi laboris adipisicing adipisicing ad aliquip exercitation sit duis.
+                                </p>
+                                <p class="slider__text">
+                                    Ex irure minim eiusmod tempor cillum consectetur ullamco.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slider__arrows">
+                        <button class="slider__button" id="prev">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                            </svg>
+                        </button>
+                        <button class="slider__button" id="next">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>   
+            </div>
+        </main>
+        <footer class="application__footer footer">
+            <!-- контент подвала сайта -->
+        </footer>
+    </div>
+</body>
+</html>
