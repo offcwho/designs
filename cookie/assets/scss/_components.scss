@@ -1,0 +1,5 @@
+// подключает компоненты отдельных блоков сайта
+// в качестве тестового подключения, подключается блок - header
+@import "./components/header";
+@import "./components/content";
+@import "./components/cookie";

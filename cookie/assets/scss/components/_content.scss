@@ -1,0 +1,11 @@
+.content{
+    width: 100%;
+    background-color: #3F72EC;
+    &__container{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        height: 100vh;
+    }
+}
