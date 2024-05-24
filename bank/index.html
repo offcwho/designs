@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/normalize.min.css">
+    <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <script defer src="/assets/javascript/application.js"></script>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="application__header header" id="header">
+            <!-- контент шапки сайта -->
+            <img src="/assets/img/Abstract Design.png" alt="" class="header__bg-image">
+            <div class="container header__container">  
+                <a href="/" class="header__logo-container">
+                    <img src="/assets/img/Logo.png" alt="" class="header__logo">
+                </a>
+                <button class="button header__button button--primary" id="open">
+                    <img src="/assets/img/Iconb.svg" alt="" class="header__button-image">
+                </button>
+                <ul class="header__list" id="nav">
+                    <button class="button header__close button--primary" id="close">X</button>
+                    <li class="header__item">
+                        <a href="#!" class="header__link header__link--active">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#!" class="header__link">Careers</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#!" class="header__link">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#!" class="header__link">Security</a>
+                    </li>
+                    <li class="header__buttons-item">
+                        <button class="button button--transparent">Sign Up</button>
+                        <button class="button button--primary">Login</button>
+                    </li>
+                </ul>
+                <div class="header__buttons">
+                    <button class="button button--transparent">Sign Up</button>
+                    <button class="button button--primary">Login</button>
+                </div>
+            </div>
+        </header>
+        <main class="application__main main" id="main">
+            <div class="main__content" id="main-content">
+                <!-- контент страницы сайта -->
+                <section class="main__section welcome">
+                    <div class="container welcome__container">
+                        <div class="welcome__left">
+                            <div class="welcome__tag">
+                                <img src="/assets/img/Subtract.png" alt="" class="welcome__tag-image">
+                                <span class="welcome__tag-text">No LLC Required, No Credit Check.</span>
+                            </div>
+                            <h1 class="welcome__title">
+                                Welcome to YourBank <br> Empowering Your 
+                                <span class="welcome__span">Financial <br> Journey</span>
+                            </h1>
+                            <p class="welcome__description">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+                            <button class="button welcome__button button--primary">Open Account</button>
+                        </div>
+                        <div class="welcome__right">
+                            <div class="welcome__card"> 
+                                <div class="welcome__card-income">
+                                    <img src="/assets/img/Icon Container.png" alt="" class="welcome__card-income-image">
+                                    <div class="welcome__card-income-text">
+                                        <span class="welcome__card-income-cost">+ $5000,00</span>
+                                        <span class="welcome__card-income-title">Monthly Income</span>
+                                    </div>
+                                </div>
+                                <img src="/assets/img/card-abs.png" alt="" class="welcome__card-image">
+                                <div class="welcome__card-trans-container">
+                                    <span class="welcome__card-title">Your Transactions</span>
+                                    <div class="welcome__card-trans">
+                                        <div class="welcome__card-tran welcome__card-tran--first">
+                                            <div class="welcome__card-tran-left">
+                                                <img src="/assets/img/Sub Container.png" alt="" class="welcome__card-tran-image">
+                                                <div class="welcome__card-tran-info">
+                                                    <p class="welcome__card-tran-desc">Transaction</p>
+                                                    <span class="welcome__card-tran-username">Joel Kenley</span>
+                                                </div>
+                                            </div>
+                                            <div class="welcome__card-tran-cost">-$68.00</div>
+                                        </div>
+                                        <div class="welcome__card-tran welcome__card-tran--second">
+                                            <div class="welcome__card-tran-left">
+                                                <img src="/assets/img/Sub Container.png" alt="" class="welcome__card-tran-image">
+                                                <div class="welcome__card-tran-info">
+                                                    <p class="welcome__card-tran-desc">Transaction</p>
+                                                    <span class="welcome__card-tran-username">Joel Kenley</span>
+                                                </div>
+                                            </div>
+                                            <div class="welcome__card-tran-cost">-$68.00</div>
+                                        </div>
+                                        <div class="welcome__card-tran welcome__card-tran--third">
+                                            <div class="welcome__card-tran-left">
+                                                <img src="/assets/img/Sub Container.png" alt="" class="welcome__card-tran-image">
+                                                <div class="welcome__card-tran-info">
+                                                    <p class="welcome__card-tran-desc">Transaction</p>
+                                                    <span class="welcome__card-tran-username">Joel Kenley</span>
+                                                </div>
+                                            </div>
+                                            <div class="welcome__card-tran-cost">-$68.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="welcome__card-money-container">
+                                    <span class="welcome__card-title">Money Exchange</span>
+                                    <div class="welcome__card-money">
+                                        <div class="welcome__card-money-cont">
+                                            <div class="welcome__card-money-top">
+                                                <div class="welcome__card-money-region">
+                                                    <img src="/assets/img/94ea81e4c2c6c594416c7c84aaa8808a.png" alt="" class="welcome__card-money-flag">
+                                                    <span class="welcome__card-money-region-name">INR</span>
+                                                </div>
+                                                <h2 class="welcome__card-money-region-valute">Indian Rupees</h2>
+                                            </div>
+                                            <div class="welcome__card-money-bottom">
+                                                <span class="welcome__card-money-cost">5,0000</span>
+                                            </div>
+                                        </div>
+                                        <div class="welcome__card-money-cont">
+                                            <div class="welcome__card-money-top">
+                                                <div class="welcome__card-money-region">
+                                                    <img src="/assets/img/d3daa0fcd19530033b290ecec2f531e7.png" alt="" class="welcome__card-money-flag">
+                                                    <span class="welcome__card-money-region-name">USD</span>
+                                                </div>
+                                                <h2 class="welcome__card-money-region-valute">United States Dollar</h2>
+                                            </div>
+                                            <div class="welcome__card-money-bottom">
+                                                <span class="welcome__card-money-cost">12.00</span>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <button class="button welcome__button-exchange button--light">Exchange</button>
+                            </div>
+                            <div class="welcome__supported">
+                                <p class="welcome__supported-text">Supported Currency</p>
+                                <div class="welcome__supported-valute-cont">
+                                    <div class="welcome__supported-valute">
+                                        <img src="/assets/img/dollar.png" alt="" class="welcome__supported-valute-image">
+                                    </div>
+                                    <div class="welcome__supported-valute">
+                                        <img src="/assets/img/euro.png" alt="" class="welcome__supported-valute-image">
+                                    </div>
+                                    <div class="welcome__supported-valute">
+                                        <img src="/assets/img/btc.png" alt="" class="welcome__supported-valute-image">
+                                    </div>
+                                    <div class="welcome__supported-valute">
+                                        <img src="/assets/img/etherial.png" alt="" class="welcome__supported-valute-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section products">
+                    <div class="container products__container">
+                        <div class="products__header">
+                            <div class="products__header-left">
+                                <h2 class="heading products__title">Our&nbsp;<p class="products__title-color">Products</p></h2>
+                                <p class="description products__description">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
+                            </div>
+                            <div class="products__buttons">
+                                <button class="button products__button button--primary">For Individuals</button>
+                                <button class="button products__button button--transparent">For Businesses</button>
+                            </div>
+                        </div>
+                        <div class="products__grid">
+                            <div class="products__card">
+                                <div class="products__card-round-outer">
+                                    <div class="products__card-round-inner">
+                                        <img src="/assets/img/Icon.png" alt="" class="products__card-image">
+                                    </div>
+                                </div>
+                                <h2 class="products__card-title">Checking Accounts</h2>
+                                <p class="products__card-description">Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
+                            </div>
+                            <div class="products__card products__card--center">
+                                <div class="products__card-round-outer">
+                                    <div class="products__card-round-inner">
+                                        <img src="/assets/img/Icon-center.svg" alt="" class="products__card-image">
+                                    </div>
+                                </div>
+                                <h2 class="products__card-title">Savings Accounts</h2>
+                                <p class="products__card-description">Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
+                            </div>
+                            <div class="products__card">
+                                <div class="products__card-round-outer">
+                                    <div class="products__card-round-inner">
+                                        <img src="/assets/img/Icon.svg" alt="" class="products__card-image">
+                                    </div>
+                                </div>
+                                <h2 class="products__card-title">Loans and Mortgages</h2>
+                                <p class="products__card-description">Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section cases">
+                    <div class="container cases__container">
+                        <h2 class="heading cases__title">Use Cases</h2>
+                        <p class="description cases__description">At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
+                        <div class="cases__block block">
+                            <div class="block__left">
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/managing.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Managing Personal Finances</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/saving.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Saving for the Future</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/homeownership.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Homeownership</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/edu.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Education Funding</h3>
+                                </div>
+                            </div>
+                            <div class="block__right">
+                                <h2 class="block__title">For Individuals</h2>
+                                <p class="description block__description">For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers</p>
+                                <div class="block__right-grid">
+                                    <div class="block__grid-item">
+                                        <span class="block__percent">78%</span>
+                                        <p class="description block__item-desc">Secure Retirement Planning</p>
+                                    </div>
+                                    <div class="block__grid-item block__grid-item--center">
+                                        <span class="block__percent">63%</span>
+                                        <p class="description block__item-desc">Manageable Debt Consolidation</p>
+                                    </div>
+                                    <div class="block__grid-item">
+                                        <span class="block__percent">91%</span>
+                                        <p class="description block__item-desc">Reducing financial burdens</p>
+                                    </div>
+                                </div>
+                                <button class="button block__button button--outline">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="cases__block block">
+                            <div class="block__left-Business">
+                                <h2 class="block__title">For Business</h2>
+                                <p class="description block__description"> For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them</p>
+                                <div class="block__left-grid">
+                                    <div class="block__grid-item">
+                                        <span class="block__percent">65%</span>
+                                        <p class="description block__item-desc">Cash Flow Management</p>
+                                    </div>
+                                    <div class="block__grid-item block__grid-item--center">
+                                        <span class="block__percent">70%</span>
+                                        <p class="description block__item-desc">Drive Business Expansion</p>
+                                    </div>
+                                    <div class="block__grid-item">
+                                        <span class="block__percent">91%</span>
+                                        <p class="description block__item-desc">Streamline payroll processing</p>
+                                    </div>
+                                </div>
+                                <button class="button block__button button--outline">Learn More</button>
+                            </div>
+                            <div class="block__right-business">
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/startups.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Startups and Entrepreneurs</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/icon.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Cash Flow Management</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/exp.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Business Expansion</h3>
+                                </div>
+                                <div class="block__card">
+                                    <div class="block__card-round-outer">
+                                        <div class="block__card-round-inner">
+                                            <img src="/assets/img/pay.svg" alt="" class="block__card-img">
+                                        </div>
+                                    </div>
+                                    <h3 class="block__card-title">Payment Solutions</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section feature">
+                    <div class="container feature__container">
+                        <h2 class="heading feature__title">Our&nbsp;<p class="feature__title-color">Features</p></h2>
+                        <p class="description feature__description">Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience</p>
+                        <div class="feature__block">
+                            <ul class="feature__menu">
+                                <li class="feature__item">
+                                    <button class="button feature__button button--outline button--outline-active">Online Banking</button>
+                                </li>
+                                <li class="feature__item">
+                                    <button class="button feature__button button--outline">Financial Tools</button>
+                                </li>
+                                <li class="feature__item">
+                                    <button class="button feature__button button--outline">Customer Support</button>
+                                </li>
+                            </ul>
+                            <div class="feature__cards">
+                                <div class="feature__card">
+                                    <div class="feature__card-header">
+                                        <h3 class="feature__card-title">24/7 Account Access</h3>
+                                        <img src="/assets/img/feature-icon.svg" alt="" class="feature__card-image">
+                                    </div>
+                                    <p class="description feature__card-description">Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.</p>
+                                </div>
+                                <div class="feature__card">
+                                    <div class="feature__card-header">
+                                        <h3 class="feature__card-title">Mobile Banking App</h3>
+                                        <img src="/assets/img/feature-icon.svg" alt="" class="feature__card-image">
+                                    </div>
+                                    <p class="description feature__card-description">Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.</p>
+                                </div>
+                                <div class="feature__card">
+                                    <div class="feature__card-header">
+                                        <h3 class="feature__card-title">Secure Transactions</h3>
+                                        <img src="/assets/img/feature-icon.svg" alt="" class="feature__card-image">
+                                    </div>
+                                    <p class="description feature__card-description">Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.</p>
+                                </div>
+                                <div class="feature__card">
+                                    <div class="feature__card-header">
+                                        <h3 class="feature__card-title">Bill Pay and Transfers</h3>
+                                        <img src="/assets/img/feature-icon.svg" alt="" class="feature__card-image">
+                                    </div>
+                                    <p class="description feature__card-description">Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section faq">
+                    <div class="container faq__container">
+                        <h2 class="heading faq__title"><p class="faq__title faq__title--color">Frequently&nbsp;</p>Asked Questions</h2>
+                        <p class="description faq__description">Still you have any questions? Contact our Team via support@yourbank.com</p>
+                        <div class="faq__grid">
+                            <div class="faq__card">
+                                <h3 class="faq__card-title">How do I open an account with YourBank?</h3>
+                                <p class="description faq__card-description">Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.</p>
+                            </div>
+                            <div class="faq__card">
+                                <h3 class="faq__card-title">What documents do I need to provide to apply for a loan?</h3>
+                                <p class="description faq__card-description">The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.</p>
+                            </div>
+                            <div class="faq__card">
+                                <h3 class="faq__card-title">How can I access my accounts online?</h3>
+                                <p class="description faq__card-description">Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.</p>
+                            </div>
+                            <div class="faq__card">
+                                <h3 class="faq__card-title">Are my transactions and personal information secure?</h3>
+                                <p class="description faq__card-description">At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.</p>
+                            </div>
+                        </div>
+                        <div class="faq__button-container">
+                            <button class="button faq__button button--outline">Load All FAQ’s<i class='bx bx-chevron-down icon-22px'></i></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__section reviews">
+                    <div class="container reviews__container">
+                        <div class="reviews__header">
+                            <div class="reviews__text">
+                                <h2 class="heading reviews__title">Our&nbsp;<p class="reviews__title reviews__title--color">Asked Questions</p></h2>
+                                <p class="description reviews__description">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+                            </div>
+                            <div class="reviews__buttons">
+                                <button class="button reviews__button button--primary">For Individuals</button>
+                                <button class="button reviews__button button--transparent">For Businesses</button>
+                            </div>
+                        </div> 
+                        <div class="reviews__coments">
+                            <button class="button reviews__button-prev button--outline" id="prev">
+                                <img src="/assets/img/arrow-left.svg" alt="" class="reviews__button-image">
+                            </button>
+                            <div class="reviews__grid">
+                                <div class="reviews__card reviews__card">
+                                    <div class="reviews__grid-icon">
+                                        <img src="/assets/img/Icon-reviews.svg" alt="" class="reviews__grid-image">
+                                    </div>
+                                    <p class="reviews__grid-text">YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.</p>
+                                    <span class="reviews__grid-username">Sara T</span>
+                                </div>
+                                <div class="reviews__card reviews__card--active">
+                                    <div class="reviews__grid-icon">
+                                        <img src="/assets/img/Icon-reviews.svg" alt="" class="reviews__grid-image">
+                                    </div>
+                                    <p class="reviews__grid-text">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+                                    <span class="reviews__grid-username">John D</span>
+                                </div>
+                                <div class="reviews__card reviews__card">
+                                    <div class="reviews__grid-icon">
+                                        <img src="/assets/img/Icon-reviews.svg" alt="" class="reviews__grid-image">
+                                    </div>
+                                    <p class="reviews__grid-text">I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
+                                    <span class="reviews__grid-username">Emily G</span>
+                                </div>
+                            </div>
+                            <button class="button reviews__button-next button--outline" id="next">
+                                <img src="/assets/img/arrow.svg" alt="" class="reviews__button-image">
+                            </button>
+                            <div class="reviews__buttons-container-adaptive">
+                                <button class="button reviews__button-prev-adaptive button--outline" id="prev_adaptive">
+                                    <img src="/assets/img/arrow-left.svg" alt="" class="reviews__button-image">
+                                </button>
+                                <button class="button reviews__button-next-adaptive button--outline" id="next_adaptive">
+                                    <img src="/assets/img/arrow.svg" alt="" class="reviews__button-image">
+                                </button>
+                            </div>
+                        </div>   
+                    </div>
+                </section>
+                <section class="main__section start">
+                    <div class="container start__container">
+                        <img src="/assets/img/Abstract Design-ind.svg" alt="" class="start__background">
+                        <div class="start__text">
+                            <h2 class="heading start__title">Start your financial journey with&nbsp;<p class="start__title start__title--color">YourBank today!</p></h2>
+                            <p class="description start__description">Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service</p>
+                        </div>
+                        <button class="button start__button button--primary">Open Account</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="application__footer footer">
+            <!-- контент подвала сайта -->
+            <div class="container footer__container">
+                <div class="footer__header">
+                    <a href="#!" class="footer__link-logo">
+                        <img src="/assets/img/Logo.png" alt="" class="footer__logo">
+                    </a>  
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Careers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <address class="footer__address">
+                    <a href="mailto:hello@skillbirdge.com" class="footer__link">
+                        <img src="/assets/img/mail.svg" alt="" class="footer__address-icon">
+                        <span class="footer__link-text">hello@skillbirdge.com</span>
+                    </a>
+                    <a href="tel:+9191813232309" class="footer__link">
+                        <img src="/assets/img/phone.svg" alt="" class="footer__address-icon"> 
+                        <span class="footer__link-text">+91 91813 23 2309</span>
+                    </a>
+                    <a href="#!" class="footer__link">
+                        <img src="/assets/img/location.svg" alt="" class="footer__address-icon">
+                        <span class="footer__link-text">Somewhere in the World</span>
+                    </a>
+                </address>
+                <div class="footer__privacy">
+                    <div class="footer__social">
+                        <a href="#!" class="footer__link">
+                            <img src="/assets/img/facebook.svg" alt="" class="footer__link-icon">
+                        </a>
+                        <a href="#!" class="footer__link">
+                            <img src="/assets/img/twitter.svg" alt="" class="footer__link-icon">
+                        </a>
+                        <a href="#!" class="footer__link">
+                            <img src="/assets/img/in.svg" alt="" class="footer__link-icon">
+                        </a>
+                    </div>
+                    <div class="footer__rights">
+                        <p class="footer__rights-text">YourBank All Rights Reserved</p>
+                    </div>
+                    <div class="footer__policy">
+                        <a href="#!" class="footer__link footer__link--policy">Privacy Policy</a>
+                        <a href="#!" class="footer__link footer__link--terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="cookie">
+            <div class="cookie__left">
+                <div class="cookie__header">
+                    <i class='bx bx-cookie cookie__icon'></i>
+                    <h2 class="cookie__title">Cookies Consent</h2>
+                </div>
+                <div class="cookie__content">
+                    <p class="description cookie__description">
+                        This website use cookies to help you have a superior and more relevant browsing experience on the website.
+                        <a href="#!" class="cookie__link">Read more...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="cookie__buttons">
+                <button class="button cookie__button button--primary" id="acceptBtn">Accept</button>
+                <button class="button cookie__button button--transparent cookie__button--decline">Decline</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+p{
+    
+}
+.heading{
+    margin: 0 0 14px 0;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    @include lg{
+        text-align: center;
+        justify-content: center;
+    }
+}
+.description{
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-desc);
+    @include lg{
+        text-align: center;
+    }
+}

@@ -1,0 +1,63 @@
+.start{
+    padding: 150px 0 0 0;
+    &__container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px;
+        @include lg{
+            flex-direction: column;
+            padding: 30px!important;
+        }
+        &::before{
+            content: '';
+            background-image: linear-gradient(341deg, #1C1C1C 40.67%, #1C1C1C 70.67%, rgba(28, 28, 28, 0) 100%), url(/assets/img/asphalt.png);
+            background-color: var(--color-heading);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            border-radius: 10px;
+
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            left: -1px;
+            top: -1px;
+            background: linear-gradient(52deg,var(--color-secondary), #262626, #262626, var(--color-secondary));
+            border-radius: 10px;
+            z-index: -2;
+        }
+    }
+    &__text{
+        max-width: 1100px;
+        z-index: 1;
+    }
+    &__title{
+        display: flex;
+        @include lg{
+            flex-direction: column;
+        }
+        &--color{
+            margin: 0;
+            color: var(--color-accent);
+        }
+    }
+    &__button{
+        @include lg{
+            margin-top: 24px;
+        }
+    }
+    &__background{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
