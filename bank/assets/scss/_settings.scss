@@ -1,0 +1,37 @@
+*{
+    //border: 1px solid red;
+}
+
+.application{
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-weight: 400;
+    &__template{
+        width: 100%;
+    }
+    overflow-x: hidden;
+}
+.container{
+    max-width: var(--container-width);
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    @include xxxl{
+        max-width: 1440px;
+    }
+    @include lg{
+        padding: 0 16px!important;
+    }
+}
+a{
+    transition: opacity 0.2s ease-in-out;
+}
+a:hover{
+    opacity: 0.5;
+}
+
+.d-none{
+    display: none!important;
+}

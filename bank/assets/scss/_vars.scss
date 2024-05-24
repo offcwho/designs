@@ -1,0 +1,28 @@
+// создаем переменные для scss
+$black: #000;
+$white: #fff;
+// создаем переменные для css
+:root{
+    /* COLOR  */
+    --color-white: #{$white};
+    --color-black: #{$black};
+    --color-accent: #CAFF33;
+    --color-secondary: #22251B;
+    --color-bg: #191919;
+    --color-dark: #1A1A1A;
+    --color-text: #E4E4E7;
+    --color-heading: #1C1C1C;
+    --color-green: #D1FF4D;
+    --color-gray: #262626;
+    --color-desc: #B3B3B3;
+
+    --border-image: linear-gradient(0deg,var(--color-accent), #262626, #262626, var(--color-accent));
+    
+    
+
+    --content-width: 1596px;
+    --container-padding: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --font-size: 16px;
+    --font-family: 'SF UI', sans-serif;
+}
